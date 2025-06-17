@@ -15,6 +15,5 @@ final router = GoRouter(
       name: 'signup',
       builder: (context, state) => const SignupScreen(),
     ),
-
   ],
 );

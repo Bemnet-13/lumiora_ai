@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lumiora_ai/styles/button_style.dart';
 
 class SignupForm extends StatefulWidget {
   const SignupForm({super.key});
@@ -25,7 +26,7 @@ class SignupFormState extends State<SignupForm> {
     return Form(
       key: _formKey,
       child: SizedBox(
-        width: 400,
+        width: 325,
         child: Column(
           children: <Widget>[
             TextFormField(
@@ -45,15 +46,16 @@ class SignupFormState extends State<SignupForm> {
                 prefixIcon: Icon(Icons.lock),
               ),
             ),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 SizedBox(width: 10),
-                ElevatedButton.icon(
+                FilledButton.icon(
                   onPressed: () {},
                   label: Text("Sign Up"),
                   icon: Icon(Icons.arrow_forward),
-                  style: ButtonStyle(),
+                  style: signupButtonStyle,
                 ),
               ],
             ),
